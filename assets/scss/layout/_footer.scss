@@ -1,0 +1,113 @@
+footer {
+  background-color: $black--color;
+  padding: 9.2rem 0 7.2rem 0;
+
+  .footer {
+    &-logo {
+      img {
+        height: 2.4rem;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      padding-left: 0;
+
+      &-item {
+
+
+        a {
+          color: #bdbdbd;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+
+          &:hover {
+            color: $vivid-amber--color;
+          }
+
+          font: {
+            size: 1.6rem;
+            weight: 500;
+          }
+
+          i {
+            color: $vivid-amber--color;
+            margin-right: 1rem;
+          }
+
+          p {
+            display: inline-block;
+            margin: 8px 0;
+          }
+        }
+
+      }
+    }
+
+    &-heading-list {
+      font: {
+        size: 2rem
+      }
+
+      color: $white--color;
+    }
+
+    &-bookmundi {
+      background-color: $white--color;
+      border-radius: .6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 60%;
+      margin: 1.2rem 0;
+
+      &-heading {
+        text-transform: uppercase;
+        color: $vivid-green-cyan--color;
+        font-size: 1.4rem;
+      }
+
+      img {
+        width: 90%;
+      }
+
+      &-text {
+        font-size: 1.8rem;
+        color: $vivid-green-cyan--color;
+      }
+
+      a {
+        margin: 1.8rem 0;
+        text-decoration: none;
+      }
+    }
+
+    &-connect {
+      cursor: arrows;
+
+      &-icon {
+        font-size: 1.6rem;
+        color: $white--color;
+
+        &:hover {
+          color: $vivid-amber--color;
+        }
+      }
+
+      &-us {
+        display: inline-block;
+
+        a {
+          text-decoration: none;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &-text {
+      color: $white--color;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,256 @@
+.main {
+
+  .home {
+    &-slide {
+      position: relative;
+
+      &-img {
+        margin-top: -$header-contact--height + .5rem;
+        padding-top: 50%;
+        width: 100%;
+        transform: scale(1.1);
+        background: url("../img/Laos-banner-new-1.jpg") top center / 100% no-repeat;
+      }
+
+      &-my-img {}
+
+      &-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+
+        &-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      &-center {
+        &-content {
+          user-select: none;
+          text-align: center;
+          transform: translateY(-50%);
+
+          &__p {
+            font-size: 2rem;
+            color: $vivid-amber--color;
+          }
+        }
+      }
+
+      &-navigation {
+
+        &-left,
+        &-right {
+          font-size: 2.4rem;
+          color: $white--color;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      %base {
+        width: 25%;
+        height: 50%;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+
+        %icon {
+          font-size: 1.8rem;
+          color: $vivid-amber--color;
+          margin: 0 1rem;
+        }
+
+        %input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+          font-size: 1.6rem;
+          line-height: 3rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &-find-tour {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        display: flex;
+        height: 10.8rem;
+        background-color: $white--color;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      &-option {
+        &-search {
+          @extend %base;
+
+          i {
+            @extend %icon;
+          }
+
+          &__input {
+            @extend %input;
+          }
+        }
+
+        &-select {
+          @extend %base;
+
+          i {
+            @extend %icon;
+          }
+
+          select {
+            @extend %input;
+          }
+        }
+      }
+    }
+
+    &-media {
+      background: url('../img/h1-background-3.png') top / cover no-repeat;
+      padding: 30rem 0 10rem;
+      margin-top: -16rem;
+
+      &-content-left {
+        position: relative;
+        padding: 0 1.2rem;
+
+        img {
+          filter: brightness(.9);
+          width: 100%;
+          min-height: 48rem;
+        }
+
+        &-text {
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          padding-left: 2rem;
+
+          .h3-heading--kristi {}
+
+          p {
+            font: {
+              size: 3rem;
+              weight: bold;
+              family: "Playfair Display";
+            }
+
+            color: $white--color;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 8rem;
+            color: $vivid-amber--color;
+
+            &:hover {
+
+              cursor: pointer;
+
+              i {
+                transform: scale(1.1);
+                transition: all .2s;
+              }
+            }
+          }
+        }
+
+      }
+
+      &-content-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-right: 2rem;
+
+        &-heading {
+          font-size: 3.2rem;
+          font-family: 'Playfair Display';
+        }
+
+        &-description {
+          font-size: 2rem;
+          color: $light-green-cyan--color;
+        }
+      }
+    }
+
+
+  }
+
+  .home-select {
+    &-option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      &-text {
+        display: flex;
+        align-items: center;
+        @extend %input;
+      }
+
+      &-arrow {
+        transform: translateY(-20%);
+      }
+
+      &-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        list-style: none;
+        background-color: $white--color;
+        padding: 1rem;
+        transform: translateX(-2rem);
+        max-height: 20rem;
+        height: 0;
+        visibility: hidden;
+        overflow-y: auto;
+      }
+
+      &-item {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+
+        &:hover {
+          cursor: pointer;
+          color: $vivid-amber--color;
+        }
+      }
+    }
+  }
+
+
+
+  .selector-month {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+}
