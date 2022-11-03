@@ -58,3 +58,49 @@
     family: "Montserrat"
   }
 }
+
+.btn-border-bottom-primary--color {
+  font: {
+    size: 1.2rem;
+    family: "Montserrat";
+    weight: 700;
+  }
+
+  color: $vivid-amber--color;
+  line-height: 1.8rem;
+  position: relative;
+  text-decoration: none;
+  word-spacing: .2rem;
+  display: inline-block;
+  padding: 1rem 0;
+  overflow: hidden;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: .25rem;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    background-color: $vivid-orange--color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: .25rem;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    background-color: $vivid-orange--color;
+  }
+
+  &:hover::after {
+    animation: for-button-border-bottom-after-primary--color 3s;
+  }
+
+  &:hover::before {
+    animation: for-button-border-bottom-before-primary--color 3s 3s;
+  }
+}

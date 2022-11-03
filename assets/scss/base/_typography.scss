@@ -8,6 +8,31 @@
   text-transform: uppercase;
 }
 
+.h2-heading--kristi {
+  font: {
+    size: 6.5rem;
+    family: Kristi;
+    weight: 400;
+  }
+
+  margin: 0;
+  color: $vivid-amber--color;
+}
+
+.h3-heading-img--playfair-display {
+  font: {
+    size: 3rem;
+    family: 'Playfair Display';
+  }
+
+  color: $white--color;
+  padding: 0 4rem;
+  margin: .6rem 0 2.8rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 2rem;
+}
+
 .h3-heading--kristi {
   font: {
     family: Kristi;
@@ -16,4 +41,25 @@
 
   margin: 0;
   color: $vivid-amber--color;
+}
+
+.p-paragraph--cabin {
+  margin: 2.5rem 0 0 0;
+  color: $light-green-cyan--color;
+  line-height: 3rem;
+
+  font: {
+    size: 1.9rem;
+  }
+}
+
+.h4-experience--playfair-display {
+  font: {
+    size: 1.8rem;
+    family: "Playfair Display";
+  }
+
+  line-height: 2.7rem;
+  margin: 2.5rem 0 0;
+  color: $black--color;
 }

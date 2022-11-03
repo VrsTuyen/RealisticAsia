@@ -3,14 +3,12 @@
   .home {
     &-slide {
       position: relative;
+      margin-top: -$header-primary--height;
+      padding-top: 50%;
+      background: url("../img/Laos-banner-new-1.jpg") top center / 100% no-repeat;
+      width: 100%;
 
-      &-img {
-        margin-top: -$header-contact--height + .5rem;
-        padding-top: 50%;
-        width: 100%;
-        transform: scale(1.1);
-        background: url("../img/Laos-banner-new-1.jpg") top center / 100% no-repeat;
-      }
+      &-img {}
 
       &-my-img {}
 
@@ -189,12 +187,258 @@
 
         &-description {
           font-size: 2rem;
+          margin-top: 2.5rem;
           color: $light-green-cyan--color;
         }
       }
     }
 
+    &-different {
+      background: url("../img/Angkor-home-1-scaled.jpg") center center / cover no-repeat;
+      padding: 12rem 0;
 
+      &-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      &-content {
+        max-width: 94.7rem;
+        display: block;
+        text-align: center;
+      }
+
+      &-title {
+        font: {
+          size: 4.5rem;
+          family: "Playfair Display";
+        }
+
+        margin: 0;
+        color: $white--color;
+      }
+
+      &-description {
+        font: {
+          size: 2rem;
+        }
+
+        margin-top: 2.5rem;
+        color: $white--color;
+      }
+    }
+
+    &-destination {
+      @include layout-kristi-cabin;
+      background: url(../img/h1-background-2.jpg);
+
+
+      &-container {
+        display: block;
+        text-align: left;
+        margin-top: 6.5rem;
+      }
+
+      &-item {
+        position: relative;
+        overflow: hidden;
+
+        &-link {
+          display: block;
+          width: 42.2rem;
+          height: 42.2rem;
+          overflow: hidden;
+
+          margin-bottom: 2.5rem;
+
+          &:first-child {
+            width: 100%;
+            max-width: 86rem;
+          }
+        }
+
+        &-img {
+          height: 42.2rem;
+          max-width: 42.2rem;
+          object-fit: cover;
+          transition: all .3s;
+          overflow: hidden;
+          user-select: none;
+
+          &:first-child {
+            width: 100%;
+            max-width: 86rem;
+          }
+        }
+
+        &:hover {
+          .home-destination-item-img {
+            transform: scale(1.1);
+          }
+        }
+
+      }
+    }
+
+    &-experience {
+      @include layout-kristi-cabin;
+      padding-bottom: 2rem;
+
+      &-title {
+        text-align: center;
+      }
+
+      &-content {
+        margin-top: 6rem;
+
+        img {
+          max-width: 23.6rem;
+          height: 23.6rem;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &-responsible {
+      position: relative;
+      display: flex;
+      background-color: #1C1C1C;
+
+      &-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(30%);
+        z-index: -1;
+        background: url(../img/h1-img-4.jpg) top / cover no-repeat;
+        transition: all .3s;
+      }
+
+      &-content {
+
+        &-left {
+          padding: 13rem 0;
+          position: relative;
+          background: transparent;
+          z-index: 0;
+          text-align: center;
+
+          &:hover {
+            .home-responsible-slide {
+              transform: translateX(25%);
+            }
+          }
+
+          &-description {
+            color: $white--color;
+            font-size: 1.8rem;
+            padding: 0 15%;
+            text-align: justify;
+          }
+        }
+
+        &-right {
+          flex: 0 0 50%;
+          max-width: 50%;
+          z-index: 0;
+        }
+      }
+    }
+
+
+    &-inspiration {
+      @include layout-kristi-cabin;
+      background: url(../img/h1-img-6.jpg) bottom center / cover no-repeat;
+      text-align: center;
+    }
+
+    &-personalize {
+      @include layout-kristi-cabin;
+      text-align: center;
+      position: relative;
+
+      &-content {
+        margin-bottom: 3rem;
+      }
+
+      &-container-item {
+        margin: 3px;
+
+        &-img {
+          width: 100%;
+        }
+
+        &-name {
+          font: {
+            size: 2rem;
+            family: "Playfair Display"
+          }
+        }
+
+        &-position {
+          font-size: 1.6rem;
+          color: $cyan-bluish-gray--color;
+        }
+      }
+    }
+
+    &-join-newsletter {
+      display: flex;
+      justify-content: center;
+      transform: translateY(50%);
+      background: url(../img/h1-img-7.jpg);
+      width: 100%;
+
+      &-text-content {
+        margin: 0 3rem;
+
+        &-title {
+          font: {
+            size: 3rem;
+            family: "Playfair Display";
+          }
+        }
+
+        &-description {
+          font: {
+            size: 2rem;
+          }
+
+          color: #383838;
+        }
+      }
+
+      &-mail-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &-input {
+          margin-left: 6rem;
+          width: 100%;
+          height: 5rem;
+          padding: 2rem;
+          outline: none;
+          border: none;
+          font-size: 2rem;
+        }
+
+      }
+
+      &-button-content {
+        margin-right: 6rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        background-color: #383838;
+        border: none;
+        color: $white--color;
+        height: 5rem;
+        padding: 1.5rem 3rem;
+      }
+    }
   }
 
   .home-select {
@@ -243,14 +487,10 @@
     }
   }
 
-
-
   .selector-month {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
   }
-
-
 }

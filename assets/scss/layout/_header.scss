@@ -1,4 +1,6 @@
 header {
+  z-index: 9999;
+
   .header {
     &-contact {
       background-color: #1C1C1C;
@@ -160,7 +162,7 @@ header {
         visibility: hidden;
         background-color: $black--color;
         color: $white--color;
-        transition: all .2s;
+        transition: all .3s;
         padding-left: 0;
         z-index: 1;
 
@@ -175,7 +177,7 @@ header {
 
           a {
             font: {
-              size: 1.1rem;
+              size: 1.2rem;
               family: Cabin;
             }
 

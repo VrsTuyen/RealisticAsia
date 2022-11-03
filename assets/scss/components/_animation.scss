@@ -1,0 +1,21 @@
+@keyframes for-button-border-bottom-after-primary--color {
+
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes for-button-border-bottom-before-primary--color {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
