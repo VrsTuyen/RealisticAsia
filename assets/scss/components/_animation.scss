@@ -19,3 +19,37 @@
     width: 100%;
   }
 }
+
+@keyframes for-label-text-slide {
+  0% {
+    opacity: 0;
+    transform: translate(50px, -35px) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes for-label-img-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 25px) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}

@@ -1,0 +1,24 @@
+%navigation {
+  font-size: 3.2rem;
+  color: rgb(155, 155, 155);
+  transition: all .2s;
+  margin: 0;
+  z-index: 1;
+}
+
+.navigation {
+
+  &-left,
+  &-right {
+    @extend %navigation;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+
+    i {
+      display: inline-block;
+    }
+  }
+}

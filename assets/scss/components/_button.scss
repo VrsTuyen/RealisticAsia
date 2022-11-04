@@ -61,9 +61,9 @@
 
 .btn-border-bottom-primary--color {
   font: {
-    size: 1.2rem;
+    size: 1.4rem;
     family: "Montserrat";
-    weight: 700;
+    weight: 500;
   }
 
   color: $vivid-amber--color;
@@ -83,7 +83,7 @@
     bottom: 3px;
     left: 0;
     width: 100%;
-    background-color: $vivid-orange--color;
+    background-color: $vivid-amber--color;
   }
 
   &::before {
@@ -93,14 +93,14 @@
     bottom: 3px;
     left: 0;
     width: 0;
-    background-color: $vivid-orange--color;
+    background-color: $vivid-amber--color;
   }
 
   &:hover::after {
-    animation: for-button-border-bottom-after-primary--color 3s;
+    animation: for-button-border-bottom-after-primary--color .5s;
   }
 
   &:hover::before {
-    animation: for-button-border-bottom-before-primary--color 3s 3s;
+    animation: for-button-border-bottom-before-primary--color .2s .3s;
   }
 }
