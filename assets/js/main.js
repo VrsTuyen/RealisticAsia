@@ -54,12 +54,12 @@ function run() {
         `
     }
   })
-
-
-
-
   let index = 0
-  const arr = ['Vietnam-banner-new-1.jpg', 'shutterstock_637433827.jpg', 'Cambodia-banerr.jpg', 'Laos-banner-new-1.jpg', 'Thailand-Banner-new-1.jpg']
+  const arr = [{ label: 'adventurous', path: 'Vietnam-banner-new-1.jpg' },
+  { label: 'adventurous', path: 'shutterstock_637433827.jpg' },
+  { label: 'life-changing', path: 'Cambodia-banerr.jpg' },
+  { label: 'life-changing', path: 'Laos-banner-new-1.jpg' },
+  { label: 'life-changing', path: 'Thailand-Banner-new-1.jpg' }]
 
   click()
 
@@ -84,7 +84,7 @@ function run() {
       }
 
       if ($('.home-slide-my-img.active')) {
-        $('.home-slide-my-img.active').classList.remove('active')
+        $('.home-slide-my-img.active').style.cssText = 'opacity: 0, visibility: hidden, '
       }
       $$('.home-slide-my-img')[index].classList.add('active')
     }
