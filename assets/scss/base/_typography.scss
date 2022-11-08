@@ -6,6 +6,15 @@
 
   color: $white--color ;
   text-transform: uppercase;
+
+  @include responsible(tablet) {
+    font-size: 4.6rem;
+  }
+
+  @include responsible(mobile) {
+    margin: 0;
+    font-size: 3.5rem;
+  }
 }
 
 .h2-heading--kristi {
@@ -53,6 +62,16 @@
   }
 }
 
+.p-paragraph--cabin-22 {
+  margin: 2.5rem 0 0 0;
+  color: $light-green-cyan--color;
+  line-height: 3rem;
+
+  font: {
+    size: 2.2rem;
+  }
+}
+
 .h4-experience--playfair-display {
   font: {
     size: 1.8rem;
@@ -62,6 +81,10 @@
   line-height: 2.7rem;
   margin: 2.5rem 0 0;
   color: $black--color;
+
+  @include responsible(tablet) {
+    margin: 0;
+  }
 }
 
 .h2-playfair-display-45 {
@@ -73,4 +96,39 @@
   text-align: center;
   color: $black--color;
 
+}
+
+.h2-playfair-display-60 {
+  font: {
+    size: 6rem;
+    family: "Playfair Display";
+  }
+
+  text-align: center;
+  color: $white--color;
+
+}
+
+.h2-heading--kristi-80 {
+  font: {
+    size: 8rem;
+    family: Kristi;
+    weight: 500;
+  }
+
+  margin: 2.8rem 0;
+  text-align: center;
+  color: $vivid-amber--color;
+}
+
+.h2-heading--kristi-60 {
+  font: {
+    size: 6rem;
+    family: Kristi;
+    weight: 500;
+  }
+
+  margin: 2.8rem 0;
+  text-align: center;
+  color: $vivid-amber--color;
 }

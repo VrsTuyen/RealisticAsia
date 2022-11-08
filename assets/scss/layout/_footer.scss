@@ -2,7 +2,13 @@ footer {
   background-color: $black--color;
   padding: 9.2rem 0 7.2rem 0;
 
+  @include responsible(mobile) {
+    padding: 9.2rem 16px 7.2rem;
+  }
+
   .footer {
+
+
     &-logo {
       img {
         height: 2.4rem;
@@ -62,14 +68,24 @@ footer {
       max-width: 60%;
       margin: 1.2rem 0;
 
+      @include responsible(mobile) {
+        max-width: 100%;
+      }
+
       &-heading {
         text-transform: uppercase;
         color: $vivid-green-cyan--color;
         font-size: 1.4rem;
+        padding: 6px 0 0 0;
+
+        @include responsible(mobile) {
+          font-size: 1.2rem;
+        }
       }
 
       img {
-        width: 90%;
+        width: 3rem;
+        transform: translateY(30%);
       }
 
       &-text {
@@ -78,7 +94,7 @@ footer {
       }
 
       a {
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem;
         text-decoration: none;
       }
     }

@@ -1,17 +1,22 @@
 @import "./abstracts/variable";
 
+@import "./base/responsible";
 
 @import "./base/base";
-@import "./base/typography";
 
 @import "./components/button";
 @import "./components/mixins";
 @import "./components/animation";
 @import "./components/card";
 @import "./components/navigation";
+@import "./components/layout-img-full";
 
+@import "./base/typography";
 
 @import "./layout/header";
 @import "./layout/footer";
 
 @import "./pages/home";
+@import "./pages/about-us";
+@import "./pages/travel-experiences";
+@import "./pages/destination.scss";

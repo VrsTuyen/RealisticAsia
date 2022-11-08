@@ -8,6 +8,13 @@ $layouts: 330, 337, 357, 411;
     width: 303px;
     height: #{$layout}px;
 
+    @include responsible('pc low') {
+      width: 100%;
+    }
+
+    @include responsible('mobile') {
+      width: 100%;
+    }
   }
 }
 
@@ -18,7 +25,12 @@ $layouts: 330, 337, 357, 411;
   text-align: center;
   overflow: hidden;
   padding-bottom: 10rem;
-  margin: 3rem;
+  margin: 3rem 0;
+  max-width: 100%;
+
+  @include responsible(tablet) {
+    margin: 3rem auto;
+  }
 
   %side {
     backface-visibility: hidden;

@@ -1,0 +1,23 @@
+@mixin responsible($device) {
+
+  // mobile
+  @if $device =="mobile" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  // tablet
+  @if $device =="tablet" {
+    @media (max-width: 979px) {
+      @content;
+    }
+  }
+
+  // large
+  @if $device =="pc low" {
+    @media (min-width: 980px) and (max-width: 1339px) {
+      @content;
+    }
+  }
+}

@@ -8,6 +8,10 @@ header {
       background-color: #1C1C1C;
       transition: all .2s;
 
+      // @include responsible(large) {
+      //   display: none;
+      // }
+
       &__link {
         text-decoration: none;
         margin: 0 .8rem 0 .1rem;
@@ -15,6 +19,11 @@ header {
         &:last-child {
           margin-right: 5rem;
         }
+
+        &:hover {
+          cursor: pointer;
+        }
+
       }
 
       &__icon {
@@ -37,6 +46,10 @@ header {
         transform: translateY(0);
         transition: all 3s;
         z-index: 1;
+
+        @include responsible("tablet") {
+          display: none;
+        }
 
         &__text {
           font: {
@@ -93,10 +106,15 @@ header {
     &-navigation {
       height: 100%;
 
+      @include responsible('tablet') {
+        display: none;
+      }
+
       &-list {
         list-style: none;
         margin: 0;
         height: 100%;
+        padding-left: 0;
       }
 
       &-item {
@@ -105,6 +123,13 @@ header {
         height: 100%;
         padding: 0 1.9rem;
         position: relative;
+
+        @include responsible("pc low") {
+          padding: 0 .6rem;
+        }
+
+
+
 
         &.active {
           color: $vivid-amber--color;
@@ -193,9 +218,14 @@ header {
     }
 
     &-logo {
+      @include responsible(tablet) {
+        flex: 1;
+        text-align: center;
+      }
+
       a {
         text-decoration: none;
-        display: block;
+        display: inline-block;
 
         img {
           height: 3rem;
@@ -213,6 +243,119 @@ header {
       transition: all .5s;
       color: $white--color;
       z-index: 99;
+
+      @include responsible(tablet) {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background: rgb(255, 255, 255);
+        transform: translateY(0px);
+        color: rgb(0, 0, 0);
+      }
+    }
+
+
+    &-mobile {
+      &-menu {
+        display: none;
+        margin-left: 2.6rem;
+
+        @include responsible(tablet) {
+          display: block;
+        }
+
+        i {
+          font-size: 2rem;
+        }
+
+        &-icon {
+          &.active {
+            &~.header-mobile-menu-list {
+              visibility: inherit;
+              height: 35vh;
+              opacity: 1;
+            }
+
+            i {
+              color: $vivid-amber--color;
+            }
+          }
+        }
+
+        &-list {
+          list-style: none;
+          position: absolute;
+          top: 0;
+          margin-top: $header-primary--height;
+          left: 0;
+          right: 0;
+          background-color: $white--color;
+          padding-left: 1.6rem;
+          visibility: hidden;
+          transition: all .3s;
+          height: 0vh;
+          overflow: hidden;
+          overflow-y: auto;
+          opacity: 0;
+
+
+          box-shadow: 0 1px 8px rgba(0, 0, 0, .2);
+        }
+
+        &-item {
+          font-size: 1.5rem;
+          color: #1C1C1C;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 1.2rem;
+          position: relative;
+          text-transform: capitalize;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: space-between;
+
+            &:hover {
+              color: $vivid-amber--color;
+              cursor: pointer;
+            }
+          }
+
+          i {
+            font-size: 1rem;
+          }
+
+          &.active {
+            .header-mobile-sub-menu {
+              visibility: visible;
+              display: block;
+            }
+          }
+        }
+      }
+
+      &-sub-menu {
+        list-style: none;
+        visibility: hidden;
+        padding: .6rem 0;
+        display: none;
+
+        &-item {
+          padding: 1.2rem 1.2rem 1.2rem .8rem;
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+          &:last-child {
+            border-bottom: none;
+            padding: 1.2rem 1.2rem 0 .8rem;
+          }
+        }
+      }
     }
   }
 }

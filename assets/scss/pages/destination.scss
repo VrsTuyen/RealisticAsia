@@ -1,0 +1,80 @@
+.destination {
+
+  &-head {
+    margin-top: $header-primary--height;
+    background: url(../img/Vietnam-Luxury-Cultural-Exploration-In-10-Days.jpg) top center / cover no-repeat;
+    padding: 8rem 18rem;
+
+    @include responsible('pc low') {
+      padding: 8rem 8rem;
+    }
+
+
+    @include responsible(tablet) {
+      padding: 8rem 0;
+    }
+
+
+    .h2-playfair-display-60 {
+      @include responsible(tablet) {
+        font-size: 4rem;
+      }
+    }
+
+    .p-paragraph--cabin-22 {
+      text-align: center;
+      color: $white--color;
+
+      @include responsible(tablet) {
+        font-size: 1.8rem;
+      }
+
+    }
+  }
+
+  &-container {
+    display: block;
+    text-align: left;
+    margin-top: 6.5rem;
+  }
+
+  &-item {
+    position: relative;
+    overflow: hidden;
+
+    &-link {
+      display: block;
+      width: 42.2rem;
+      height: 42.2rem;
+      overflow: hidden;
+
+      margin-bottom: 2.5rem;
+
+      &:first-child {
+        width: 100%;
+        max-width: 86rem;
+      }
+    }
+
+    &-img {
+      height: 42.2rem;
+      max-width: 42.2rem;
+      object-fit: cover;
+      transition: all .3s;
+      overflow: hidden;
+      user-select: none;
+
+      &:first-child {
+        width: 100%;
+        max-width: 86rem;
+      }
+    }
+
+    &:hover {
+      .destination-item-img {
+        transform: scale(1.1);
+      }
+    }
+
+  }
+}

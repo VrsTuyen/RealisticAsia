@@ -77,6 +77,34 @@
         <div class="row">
           <div class="col l-12 m-12 s-12">
             <div class="header-nav-container">
+              <div class="header-mobile-menu">
+                <div class="header-mobile-menu-icon">
+                  <i class="fi fi-rr-menu-burger"></i>
+                </div>
+                <ul class="header-mobile-menu-list">
+                  <li class="header-mobile-menu-item"><a href="/">home</a></li>
+                  <li class="header-mobile-menu-item">
+                    <a>about us <i class="fi fi-rr-angle-right"></i></a>
+
+                    <ul class="header-mobile-sub-menu">
+                      <li class="header-mobile-sub-menu-item"><a href="./about-us.html">about us</a></li>
+                      <li class="header-mobile-sub-menu-item"><a href="#">our team</a></li>
+                      <li class="header-mobile-sub-menu-item"><a href="#">contact us</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-mobile-menu-item"><a>Experiences <i class="fi fi-rr-angle-right"></i></a>
+
+                    <ul class="header-mobile-sub-menu">
+                      <li class="header-mobile-sub-menu-item"><a href="#">Experiences</a></li>
+                      <li class="header-mobile-sub-menu-item"><a href="#">Blogs</a></li>
+                      <li class="header-mobile-sub-menu-item"><a href="#">Travel News</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-mobile-menu-item"><a href="#">destinations</a></li>
+                  <li class="header-mobile-menu-item"><a href="#">responsible travel</a></li>
+                  <li class="header-mobile-menu-item"><a href="#">special offers</a></li>
+                </ul>
+              </div>
               <div class="header-logo">
                 <a href="/">
                   <img src="https://realisticasia.com/wp-content/uploads/2018/02/Realistic-asia-menu-logo-moi.png"
@@ -89,16 +117,18 @@
                           Home</span></span></a>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#"><span class="header-navigation-span"><span> About
-                          us</span></span></a>
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span">
+                        <span> About us</span></span></a>
                     <ul class="header-navigation-sub">
-                      <li class="header-navigation-sub-item"><a href="#">about us</a></li>
+                      <li class="header-navigation-sub-item"><a href="./about-us.html">about us</a></li>
                       <li class="header-navigation-sub-item"><a href="#">our team</a></li>
                       <li class="header-navigation-sub-item"><a href="#">contact us</a></li>
                     </ul>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#"><span class="header-navigation-span"><span>
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span"><span>
                           Experiences</span></span></a>
                     <ul class="header-navigation-sub">
                       <li class="header-navigation-sub-item"><a href="">Experiences</a></li>
@@ -145,7 +175,7 @@
                     <a class="header-navigation-link" href="#"><span class="header-navigation-span"><span> About
                           us</span></span></a>
                     <ul class="header-navigation-sub">
-                      <li class="header-navigation-sub-item"><a href="#">about us</a></li>
+                      <li class="header-navigation-sub-item"><a href="./about-us.html">about us</a></li>
                       <li class="header-navigation-sub-item"><a href="#">our team</a></li>
                       <li class="header-navigation-sub-item"><a href="#">contact us</a></li>
                     </ul>
@@ -183,11 +213,6 @@
   <div class="main">
     <div class="home-slide">
       <div class="home-slide-img">
-        <img class="home-slide-my-img active" src="./assets/img/Vietnam-banner-new-1.jpg" alt="">
-        <img class="home-slide-my-img" src="./assets/img/shutterstock_637433827.jpg" alt="">
-        <img class="home-slide-my-img" src="./assets/img/Cambodia-banerr.jpg" alt="">
-        <img class="home-slide-my-img" src="./assets/img/Laos-banner-new-1.jpg" alt="">
-        <img class="home-slide-my-img" src="./assets/img/Thailand-Banner-new-1.jpg" alt="">
       </div>
       <div class="home-slide-container">
         <div class="grid wide">
@@ -199,9 +224,7 @@
                 </div>
                 <div class="home-slide-center-content">
                   <div class="home-slide-center-content-label">
-                    <div class="home-slide-center-content-label-text">life-changing</div>
-                    <div class="home-slide-center-content-label-img"><img src="./assets/img/slider-1-img-1.png" alt="">
-                    </div>
+
                   </div>
                   <h2 class="h2-heading">Your journey begin</h2>
                   <p class="home-slide-center-content__p">More than discovering the wonders of the world and tasting the
@@ -220,61 +243,27 @@
                   <i class="fa-solid fa-location-dot"></i>
                   <input type="text" class="home-slide-option-search__input" placeholder="Where to?">
                 </div>
-                <div class="home-slide-option-select" onclick="showList('.home-slide-option-select')">
+                <div class="home-slide-option-select home-select-month">
                   <i class="fa-regular fa-calendar"></i>
                   <div class="selector-month">
-                    <select name="select-when" tabindex="-1" hidden id="select-when" aria-hidden="true">
-                      <option value="0">When?</option>
-                      <option value="1">January</option>
-                      <option value="2">February</option>
-                      <option value="3">March</option>
-                      <option value="4">April</option>
-                      <option value="5">May</option>
-                      <option value="6">June</option>
-                      <option value="7">July</option>
-                      <option value="8">August</option>
-                      <option value="9">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option>
-                    </select>
                     <div class="home-select-option">
                       <span class="home-select-option-text">When?</span>
                       <i class="home-select-option-arrow fa-solid fa-sort-down"></i>
                       <ul class="home-select-option-list">
-                        <li class="home-select-option-item">When?</li>
-                        <li class="home-select-option-item">January</li>
-                        <li class="home-select-option-item">February</li>
-                        <li class="home-select-option-item">March</li>
-                        <li class="home-select-option-item">April</li>
-                        <li class="home-select-option-item">May</li>
-                        <li class="home-select-option-item">June</li>
-                        <li class="home-select-option-item">July</li>
-                        <li class="home-select-option-item">August</li>
-                        <li class="home-select-option-item">September</li>
-                        <li class="home-select-option-item">October</li>
-                        <li class="home-select-option-item">November</li>
-                        <li class="home-select-option-item">December</li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="home-slide-option-select">
+                <div class="home-slide-option-select home-select-travel-type">
                   <i class="fa-solid fa-flag"></i>
-                  <select name="select-when" id="select-when">
-                    <option value="default">When?</option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                  </select>
+                  <div class="selector-travel-type">
+                    <div class="home-select-option">
+                      <span class="home-select-option-text">Travel Type?</span>
+                      <i class="home-select-option-arrow fa-solid fa-sort-down"></i>
+                      <ul class="home-select-option-list">
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <a href="#" class="btn-primary--color">Find now</a>
               </div>
@@ -356,38 +345,46 @@
                 continent, a realm of mystery and legend, and a place where you can encounter culture at its most
                 magnificent.</p>
             </div>
-            <div class="home-destination-container">
-              <div class="row">
-                <div class="col l-8 home-destination-item">
-                  <a href="#" class="home-destination-item-link">
-                    <img class="home-destination-item-img" src="./assets/img/shutterstock_637433827.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">VietNam</h3>
-                  </a>
-                </div>
-                <div class="col l-4 home-destination-item">
-                  <a href="#" class="home-destination-item-link">
-                    <img class="home-destination-item-img" src="./assets/img/Thailand-New-Website-11-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Thailand</h3>
-                  </a>
-                </div>
-                <div class="col l-4 home-destination-item">
-                  <a href="#" class="home-destination-item-link">
-                    <img class="home-destination-item-img" src="./assets/img/Cambodia-and-Vietnam-Luxury-20-days.jpg"
-                      alt="">
-                    <h3 class="h3-heading-img--playfair-display">Cambodia</h3>
-                  </a>
-                </div>
-                <div class="col l-4 home-destination-item">
-                  <a href="#" class="home-destination-item-link">
-                    <img class="home-destination-item-img" src="./assets/img/Peaceful-Luang-Prabang-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Laos</h3>
-                  </a>
-                </div>
-                <div class="col l-4 home-destination-item">
-                  <a href="#" class="home-destination-item-link">
-                    <img class="home-destination-item-img" src="./assets/img/India-destination-ok.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">India</h3>
-                  </a>
+            <div class="destination">
+              <div class="grid wide">
+                <div class="row">
+                  <div class="col l-12 m-12 s-12">
+                    <div class="destination-container">
+                      <div class="row">
+                        <div class="col l-8  m-6 s-12 destination-item">
+                          <a href="#" class="destination-item-link">
+                            <img class="destination-item-img" src="./assets/img/shutterstock_637433827.jpg" alt="">
+                            <h3 class="h3-heading-img--playfair-display">VietNam</h3>
+                          </a>
+                        </div>
+                        <div class="col l-4  m-6 s-12 destination-item">
+                          <a href="#" class="destination-item-link">
+                            <img class="destination-item-img" src="./assets/img/Thailand-New-Website-11-1.jpg" alt="">
+                            <h3 class="h3-heading-img--playfair-display">Thailand</h3>
+                          </a>
+                        </div>
+                        <div class="col l-4  m-6 s-12 destination-item">
+                          <a href="#" class="destination-item-link">
+                            <img class="destination-item-img" src="./assets/img/Cambodia-and-Vietnam-Luxury-20-days.jpg"
+                              alt="">
+                            <h3 class="h3-heading-img--playfair-display">Cambodia</h3>
+                          </a>
+                        </div>
+                        <div class="col l-4  m-6 s-12 destination-item">
+                          <a href="#" class="destination-item-link">
+                            <img class="destination-item-img" src="./assets/img/Peaceful-Luang-Prabang-1.jpg" alt="">
+                            <h3 class="h3-heading-img--playfair-display">Laos</h3>
+                          </a>
+                        </div>
+                        <div class="col l-4  m-6 s-12 destination-item">
+                          <a href="#" class="destination-item-link">
+                            <img class="destination-item-img" src="./assets/img/India-destination-ok.jpg" alt="">
+                            <h3 class="h3-heading-img--playfair-display">India</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -410,31 +407,31 @@
             </div>
             <div class="home-experience-content">
               <div class="row">
-                <div class="col l-2-4">
+                <div class="col l-2-4 m-4 s-12">
                   <div class="home-experience-content-item">
                     <img src="./assets/img/shutterstock_1493619197-scaled-300x300.jpg" alt="">
                     <h4 class="h4-experience--playfair-display">Cultural Experiences</h4>
                   </div>
                 </div>
-                <div class="col l-2-4">
+                <div class="col l-2-4  m-4 s-12">
                   <div class="home-experience-content-item">
                     <img src="./assets/img/shutterstock_1408198757.jpg" alt="">
                     <h4 class="h4-experience--playfair-display">Cultural Experiences</h4>
                   </div>
                 </div>
-                <div class="col l-2-4">
+                <div class="col l-2-4 m-4 s-12">
                   <div class="home-experience-content-item">
                     <img src="./assets/img/Glimpse-of-Laos.jpg" alt="">
                     <h4 class="h4-experience--playfair-display">Local Experiences</h4>
                   </div>
                 </div>
-                <div class="col l-2-4">
+                <div class="col l-2-4 m-4 s-12">
                   <div class="home-experience-content-item">
                     <img src="./assets/img/153374622-1.jpg" alt="">
                     <h4 class="h4-experience--playfair-display">Lodge Experiences</h4>
                   </div>
                 </div>
-                <div class="col l-2-4">
+                <div class="col l-2-4 m-4 s-12">
                   <div class="home-experience-content-item">
                     <img src="./assets/img/maichauecolodge_anhlan224-1.jpg" alt="">
                     <h4 class="h4-experience--playfair-display">Out Of The Ordinary Experiences</h4>
@@ -483,9 +480,9 @@
     <div class="grid wide">
       <div class="row">
 
-        <div class="col l-12 ">
+        <div class="col l-12 m-12 s-12">
           <div class="row">
-            <div class="col l-3">
+            <div class="col l-3 m-6 s-12">
               <div class="card layout-357">
                 <div class="card-front">
                   <img class="card-front-img" src="./assets/img/luxury-tour.jpg" alt="">
@@ -516,7 +513,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-3">
+            <div class="col l-3 m-6 s-12">
               <div class="card layout-337">
                 <div class="card-front">
                   <img class="card-front-img" src="./assets/img/Solo-travel.jpg" alt="">
@@ -545,7 +542,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-3">
+            <div class="col l-3 m-6 s-12">
               <div class="card layout-411">
                 <div class="card-front">
                   <img class="card-front-img" src="./assets/img/Family-tour-1024x683.jpg" alt="">
@@ -575,7 +572,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-3">
+            <div class="col l-3 m-6 s-12">
               <div class="card layout-330">
                 <div class="card-front">
                   <img class="card-front-img" src="./assets/img/shutterstock_1408198757.jpg" alt="">
@@ -626,7 +623,7 @@
           </div>
           <div class="col l-12 home-personalize-container">
             <div class="row">
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/06/Hien.jpg" alt="Hien Do"
                     class="home-personalize-container-item-img">
@@ -634,7 +631,7 @@
                   <p class="home-personalize-container-item-position">Co-Founder & CEO</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2021/09/Mr.Ha-Trinh.jpg" alt="Ha Trinh"
                     class="home-personalize-container-item-img">
@@ -642,7 +639,7 @@
                   <p class="home-personalize-container-item-position">Co-Founder & Director</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/06/alex.jpg" alt="Alex Nguyen"
                     class="home-personalize-container-item-img">
@@ -650,7 +647,7 @@
                   <p class="home-personalize-container-item-position">Co-Founder & CEO</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/09/tcc.jpg" alt="Tong Cam"
                     class="home-personalize-container-item-img">
@@ -658,7 +655,7 @@
                   <p class="home-personalize-container-item-position">Accounting Manager</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/06/Irina.jpg" alt="Irina Hatcher"
                     class="home-personalize-container-item-img">
@@ -666,7 +663,7 @@
                   <p class="home-personalize-container-item-position">Partnership Manager</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/09/Soulaxay.jpg" alt="Soulaxay Sengsavath"
                     class="home-personalize-container-item-img">
@@ -674,7 +671,7 @@
                   <p class="home-personalize-container-item-position">Head Of Laos Office</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/09/Pao.jpg" alt="Pao Dararaksmey"
                     class="home-personalize-container-item-img">
@@ -682,7 +679,7 @@
                   <p class="home-personalize-container-item-position">Head Of Cambodia Office</p>
                 </div>
               </div>
-              <div class="col l-3">
+              <div class="col l-3 m-4 s-6">
                 <div class="home-personalize-container-item">
                   <img src="https://realisticasia.com/wp-content/uploads/2022/09/Tip.jpg" alt="Tip"
                     class="home-personalize-container-item-img">
@@ -695,7 +692,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col l-12">
+          <div class="col l-12 m-12 s-12">
             <div class="home-join-newsletter">
               <div class="home-join-newsletter-text-content">
                 <h3 class="home-join-newsletter-text-content-title">
@@ -734,76 +731,11 @@
             </div>
           </div>
           <div class="home-review-content-comment-slide">
-            <div class="comment-slide-item">
-              <div class="comment-slide-head">
-                <img src="./assets/img/member.png" alt="" class="comment-slide-head-img">
-                <div class="comment-slide-info">
-                  <h5 class="comment-slide-info-name">VrSTuyen</h5>
-                  <p class="comment-slide-info-date">November 4, 2022</p>
-                </div>
-              </div>
-              <div class="comment-slide-body">
-                <div class="comment-slide-body-head">
-                  <div class="comment-slide-body-check">
-                    <div class="comment-slide-body-check-rate">
-                      <i class="fa-regular fa-circle-dot"></i>
-                      <i class="fa-regular fa-circle-dot"></i>
-                      <i class="fa-regular fa-circle-dot"></i>
-                      <i class="fa-regular fa-circle-dot"></i>
-                      <i class="fa-regular fa-circle-dot"></i>
-                    </div>
-                    <div class="comment-slide-body-check-verify">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M6.26701 3.45496C6.91008 3.40364 7.52057 3.15077 8.01158 2.73234C9.15738 1.75589 10.8426 1.75589 11.9884 2.73234C12.4794 3.15077 13.0899 3.40364 13.733 3.45496C15.2336 3.57471 16.4253 4.76636 16.545 6.26701C16.5964 6.91008 16.8492 7.52057 17.2677 8.01158C18.2441 9.15738 18.2441 10.8426 17.2677 11.9884C16.8492 12.4794 16.5964 13.0899 16.545 13.733C16.4253 15.2336 15.2336 16.4253 13.733 16.545C13.0899 16.5964 12.4794 16.8492 11.9884 17.2677C10.8426 18.2441 9.15738 18.2441 8.01158 17.2677C7.52057 16.8492 6.91008 16.5964 6.26701 16.545C4.76636 16.4253 3.57471 15.2336 3.45496 13.733C3.40364 13.0899 3.15077 12.4794 2.73234 11.9884C1.75589 10.8426 1.75589 9.15738 2.73234 8.01158C3.15077 7.52057 3.40364 6.91008 3.45496 6.26701C3.57471 4.76636 4.76636 3.57471 6.26701 3.45496ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
-                          fill="#4B5563" />
-                      </svg>
-                      <p>verified</p>
-                    </div>
-                  </div>
-                  <svg version="1.1" id="Réteg_1" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128"
-                    style="enable-background:new 0 0 128 128;" xml:space="preserve">
-                    <style type="text/css">
-                      .st0 {
-                        fill: #11AD87;
-                      }
+            <div class="comment-slide">
 
-                      .st1 {
-                        fill: #FFFFFF;
-                      }
-                    </style>
-                    <circle class="st0" cx="64" cy="64" r="64" />
-                    <circle class="st1" cx="41.8" cy="66.2" r="3.7" />
-                    <circle class="st1" cx="86.3" cy="66.2" r="3.7" />
-                    <path class="st1"
-                      d="M104.2,53.2c0.9-3.2,2.4-6.2,4.4-8.9l-14.8,0c-8.9-5.5-19.1-8.4-29.6-8.2c-10.7-0.2-21.3,2.7-30.4,8.3l-13.9,0c1.9,2.7,3.4,5.6,4.3,8.8c-7.3,9.9-5.2,23.8,4.7,31c9.6,7.1,23,5.3,30.5-4l4.7,7.1l4.8-7.1c7.6,9.7,21.5,11.3,31.2,3.8C109.5,76.5,111.4,62.9,104.2,53.2z M85.6,44.3C74.3,44.6,65,53.4,64.2,64.8C63.4,53.3,54,44.4,42.5,44.2c6.8-2.8,14.2-4.3,21.6-4.2C71.5,39.9,78.8,41.3,85.6,44.3z M42.1,84.1c-9.8,0-17.7-7.9-17.7-17.7s7.9-17.7,17.7-17.7c9.8,0,17.7,7.9,17.7,17.7c0,0,0,0,0,0C59.8,76.2,51.8,84.1,42.1,84.1z M92.5,83.1c-9.2,3.4-19.4-1.3-22.8-10.5v0c-3.4-9.2,1.3-19.4,10.5-22.8c9.2-3.4,19.4,1.3,22.8,10.5C106.4,69.5,101.7,79.7,92.5,83.1z" />
-                    <path class="st1"
-                      d="M41.8,55.2c-6.1,0-11,4.9-11,11c0,6.1,4.9,11,11,11c6.1,0,11-4.9,11-11c0,0,0,0,0,0C52.7,60.1,47.8,55.2,41.8,55.2z M41.8,73.4c-4,0-7.2-3.2-7.2-7.2c0-4,3.2-7.2,7.2-7.2s7.2,3.2,7.2,7.2c0,0,0,0,0,0C49,70.1,45.8,73.3,41.8,73.4z" />
-                    <path class="st1"
-                      d="M86.3,55.2c-6.1,0-11,4.9-11,11s4.9,11,11,11c6.1,0,11-4.9,11-11c0,0,0,0,0,0C97.2,60.1,92.3,55.2,86.3,55.2z	M86.3,73.4c-4,0-7.2-3.2-7.2-7.2c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2c0,0,0,0,0,0C93.5,70.1,90.3,73.4,86.3,73.4z" />
-                  </svg>
-                </div>
-                <div class="comment-slide-body-content">
-                  <div class="comment-slide-body-content-title">
-                    Thank you Lucy!
-                  </div>
-                  <p class="comment-slide-body-content-paragraph">
-
-                    We got very lucky with finding Lucy! We booked our transport and cruise through her and both the
-                    things were seamless. She was helpful throughout the trip and gave incredible recommendations.
-                  </p>
-                </div>
-              </div>
             </div>
             <div class="comment-slide-bottom">
               <div class="comment-slide-bottom-nav">
-                <div class="comment-slide-bottom-nav-index active"></div>
-                <div class="comment-slide-bottom-nav-index"></div>
-                <div class="comment-slide-bottom-nav-index"></div>
-                <div class="comment-slide-bottom-nav-index"></div>
-                <div class="comment-slide-bottom-nav-index"></div>
-                <div class="comment-slide-bottom-nav-index"></div>
               </div>
               <p>
                 <strong>Tripadvisor</strong> rating score: <Strong>5</Strong> of <strong>5</strong>,
@@ -986,6 +918,7 @@
     </div>
   </a>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/base.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+.travel-experiences {
+  margin-top: $header-primary--height;
+
+  &-head {
+    padding-bottom: 6rem;
+
+    @include responsible(mobile) {
+      padding: 0 16px;
+    }
+
+  }
+
+}

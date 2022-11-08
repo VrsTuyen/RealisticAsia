@@ -1,43 +1,17 @@
 @mixin layout-kristi-cabin {
   padding-top: 10.8rem;
   text-align: center;
-}
 
-
-@mixin responsible($device) {
-
-  // extra small
-  @if $device =="extra small" {
-    @media (max-width: 575.98px) {
-      @content;
-    }
-  }
-
-  // small
-  @if $device =="small" {
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      @content;
-    }
-  }
-
-  // medium
-  @if $device =="medium" {
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      @content;
-    }
-  }
-
-  // large
-  @if $device =="large" {
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      @content;
-    }
-  }
-
-  // extra large
-  @if $device =="extra large" {
-    @media (min-width: 1200px) {
-      @content;
-    }
+  @include responsible(mobile) {
+    padding: 0 16px;
   }
 }
+
+
+
+// extra large
+// @if $device =="desktop" {
+//   @media (min-width: 1379px) {
+//     @content;
+//   }
+// }
