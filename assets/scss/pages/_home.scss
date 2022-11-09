@@ -3,14 +3,19 @@
   .home {
     &-slide {
       position: relative;
-      margin-top: -$header-primary--height;
       width: 100%;
 
       &-img {
         width: 100%;
-        height: 100vh;
         overflow: hidden;
+        padding-top: 50%;
+        position: relative;
 
+        @include responsible(tablet) {
+          padding-top: unset;
+          position: unset;
+          height: 100vh;
+        }
 
         .active {
           visibility: visible !important;
@@ -23,8 +28,11 @@
 
       &-my-img {
         margin-top: -64px;
-        width: 0%;
-        height: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         object-fit: cover;
         transition: opacity .4s, visibility .4s, animation .4s;
         animation: fade .4s;

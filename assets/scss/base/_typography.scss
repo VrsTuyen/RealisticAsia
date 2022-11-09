@@ -17,41 +17,8 @@
   }
 }
 
-.h2-heading--kristi {
-  font: {
-    size: 6.5rem;
-    family: Kristi;
-    weight: 400;
-  }
 
-  margin: 0;
-  color: $vivid-amber--color;
-}
-
-.h3-heading-img--playfair-display {
-  font: {
-    size: 3rem;
-    family: 'Playfair Display';
-  }
-
-  color: $white--color;
-  padding: 0 4rem;
-  margin: .6rem 0 2.8rem;
-  position: absolute;
-  z-index: 1;
-  bottom: 2rem;
-}
-
-.h3-heading--kristi {
-  font: {
-    family: Kristi;
-    size: 5rem;
-  }
-
-  margin: 0;
-  color: $vivid-amber--color;
-}
-
+// paragraph
 .p-paragraph--cabin {
   margin: 2.5rem 0 0 0;
   color: $light-green-cyan--color;
@@ -72,21 +39,8 @@
   }
 }
 
-.h4-experience--playfair-display {
-  font: {
-    size: 1.8rem;
-    family: "Playfair Display";
-  }
 
-  line-height: 2.7rem;
-  margin: 2.5rem 0 0;
-  color: $black--color;
-
-  @include responsible(tablet) {
-    margin: 0;
-  }
-}
-
+// h2 playfair display
 .h2-playfair-display-45 {
   font: {
     size: 4.5rem;
@@ -109,15 +63,47 @@
 
 }
 
-.h2-heading--kristi-80 {
+// h3 playfair display
+.h3-heading-img--playfair-display {
   font: {
-    size: 8rem;
-    family: Kristi;
-    weight: 500;
+    size: 3rem;
+    family: 'Playfair Display';
   }
 
-  margin: 2.8rem 0;
-  text-align: center;
+  color: $white--color;
+  padding: 0 4rem;
+  margin: .6rem 0 2.8rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 2rem;
+}
+
+// h4 playfair display
+
+.h4-experience--playfair-display {
+  font: {
+    size: 1.8rem;
+    family: "Playfair Display";
+  }
+
+  line-height: 2.7rem;
+  margin: 2.5rem 0 0;
+  color: $black--color;
+
+  @include responsible(tablet) {
+    margin: 0;
+  }
+}
+
+// h2 kristi
+.h2-heading--kristi {
+  font: {
+    size: 6.5rem;
+    family: Kristi;
+    weight: 400;
+  }
+
+  margin: 0;
   color: $vivid-amber--color;
 }
 
@@ -131,4 +117,50 @@
   margin: 2.8rem 0;
   text-align: center;
   color: $vivid-amber--color;
+}
+
+.h2-heading--kristi-70 {
+  font: {
+    size: 7rem;
+    family: Kristi;
+    weight: 500;
+  }
+
+  margin: 2.8rem 0;
+  text-align: center;
+  color: $vivid-amber--color;
+}
+
+.h2-heading--kristi-80 {
+  font: {
+    size: 8rem;
+    family: Kristi;
+    weight: 500;
+  }
+
+  margin: 2.8rem 0;
+  text-align: center;
+  color: $vivid-amber--color;
+}
+
+// h3 kristi 
+.h3-heading--kristi {
+  font: {
+    family: Kristi;
+    size: 5rem;
+  }
+
+  margin: 0;
+  color: $vivid-amber--color;
+}
+
+// h4 kristi
+.h4-heading--kristi-30 {
+  font: {
+    family: Kristi;
+    size: 3rem;
+    weight: 400;
+  }
+
+  margin: 0;
 }

@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/fonts/uicons-brands/css/uicons-brands.css">
   <link rel="stylesheet" href="./assets/css/grid.css">
@@ -28,7 +27,12 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <script src="https://kit.fontawesome.com/49dffc725c.js" crossorigin="anonymous"></script>
-  <title>Destinations - Realistic Asia</title>
+  <title>Contact-us - Realistic Asia Travel</title>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -86,7 +90,8 @@
                 </div>
                 <ul class="header-mobile-menu-list">
                   <li class="header-mobile-menu-item"><a href="/">home</a></li>
-                  <li class="header-mobile-menu-item"><a>about us <i class="fi fi-rr-angle-right"></i></a>
+                  <li class="header-mobile-menu-item">
+                    <a>about us <i class="fi fi-rr-angle-right"></i></a>
 
                     <ul class="header-mobile-sub-menu">
                       <li class="header-mobile-sub-menu-item"><a href="./about-us.html">about us</a></li>
@@ -118,17 +123,19 @@
                     <a class="header-navigation-link" href="/"><span class="header-navigation-span"><span>
                           Home</span></span></a>
                   </li>
-                  <li class="header-navigation-item">
-                    <a class="header-navigation-link"><span class="header-navigation-span"><span> About
-                          us</span></span></a>
+                  <li class="header-navigation-item active">
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span">
+                        <span> About us</span></span></a>
                     <ul class="header-navigation-sub">
-                      <li class="header-navigation-sub-item "><a href="./about-us.html">about us</a></li>
+                      <li class="header-navigation-sub-item"><a href="./about-us.html">about us</a></li>
                       <li class="header-navigation-sub-item"><a href="./our-team.html">our team</a></li>
                       <li class="header-navigation-sub-item"><a href="./contact-us.html">contact us</a></li>
                     </ul>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link"><span class="header-navigation-span"><span>
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span"><span>
                           Experiences</span></span></a>
                     <ul class="header-navigation-sub">
                       <li class="header-navigation-sub-item"><a href="./travel-experiences.html">Experiences</a></li>
@@ -136,16 +143,17 @@
                       <li class="header-navigation-sub-item"><a href="./travel-news.html">travel news</a></li>
                     </ul>
                   </li>
-                  <li class="header-navigation-item active">
-                    <a class="header-navigation-link" href="#"><span
+                  <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="./destination.html"><span
                         class="header-navigation-span"><span>Destinations</span> </span></a>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#"><span class="header-navigation-span"><span>
-                          Responsible</span></span></a>
+                    <a class="header-navigation-link" href="./responsible-travel.html"><span
+                        class="header-navigation-span"><span>
+                          Responsible Travel</span></span></a>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">
+                    <a class="header-navigation-link" href="./special-offer.html">
                       <span class="header-navigation-span"><span> Special offers</span></span></a>
                   </li>
                 </ul>
@@ -155,60 +163,87 @@
         </div>
       </div>
     </div>
+
   </header>
 
   <div class="main">
-    <div class="destination">
-      <div class="destination-head">
-        <div class="grid wide">
-          <div class="row">
-            <div class="col l-12 m-12 s-12">
-              <h2 class="h2-playfair-display-60 ">Discover our amazing destinations for your tailor-made journey
-              </h2>
-              <p class="p-paragraph--cabin-22">Get inspired for your next holiday to Southeast Asia,<br> designed by our
-                specialists to make all your travel dreams come true.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="contact-us">
       <div class="grid wide">
         <div class="row">
-          <div class="col l-12 m-12 s-12">
+          <div class="col l-6 m-6 s-12">
+            <div class="contact-us-left">
+              <div class="contact-us-left-head">
+                <h2 class="h2-heading--kristi-70">We'd love to hear from you!</h2>
+                <p class="p-paragraph--cabin">For any questions, assistance, and desire to discuss your needs, please
+                  feel free to contact us, our travel experts are available at any time. Realistic Asia is flattered to
+                  support you as an extension of your business, on the ground, in Southeast Asia.</p>
+              </div>
+              <form action="_post" class="contact-us-left-form">
+                <input type="text" name="contact-us-name" id="contact-us-name" placeholder="Name*" required
+                  class="contact-us-form-input">
+                <input type="email" name="contact-us-email" id="contact-us-email" placeholder="Email address*" required
+                  class="contact-us-form-input">
+                <input type="tel" name="contact-us-phone" id="contact-us-phone" placeholder="Phone number*" required
+                  class="contact-us-form-input">
+                <input type="text" name="contact-us-national" id="contact-us-national" placeholder="Nationality*"
+                  required class="contact-us-form-input">
+                <textarea rows="5" cols="100" name="contact-us-special-requirement" placeholder="Special requirement"
+                  class="contact-us-form-input-multiple"></textarea>
 
-
-
-            <div class="destination-container">
-              <div class="row">
-                <div class="col l-8  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/shutterstock_637433827.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">VietNam</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Thailand-New-Website-11-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Thailand</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Cambodia-and-Vietnam-Luxury-20-days.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Cambodia</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Peaceful-Luang-Prabang-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Laos</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/India-destination-ok.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">India</h3>
-                  </a>
-                </div>
+                <input type="submit" value="submit" class="contact-us-form-submit">
+              </form>
+            </div>
+          </div>
+          <div class="col l-6 m-6 s-12">
+            <div class="contact-us-right-head">
+              <h2 class="h2-heading--kristi-70">Contact Us</h2>
+            </div>
+            <div class="contact-us-right">
+              <div class="contact-us-right-item">
+                <h4 class="h4-heading--kristi-30">Vietnam Office</h4>
+                <em class="contact-us-right-item-country">Hanoi, Vietnam</em>
+                <h6 class="contact-us-right-item-name">Mrs. Hien Do</h6>
+                <ul class="contact-us-right-item-list">
+                  <li>– Phone: +84-977-860-338</li>
+                  <li>– USA/Canada toll-free number: +1 (800) 956-6340</li>
+                  <li>– Email: <a href="mailto:hiendo@realisticasia.com">hiendo@realisticasia.com</a> </li>
+                </ul>
+              </div>
+              <div class="contact-us-right-item">
+                <h4 class="h4-heading--kristi-30">US & Canada Rep. Office</h4>
+                <em class="contact-us-right-item-country">Vancouver, Canada</em>
+                <h6 class="contact-us-right-item-name">Mr. Dave Emery</h6>
+                <ul class="contact-us-right-item-list">
+                  <li>– Phone: +1 604 328 6847</li>
+                  <li>– Email: <a href="mailto:sales@realisticasia.com">sales@realisticasia.com</a> </li>
+                </ul>
+              </div>
+              <div class="contact-us-right-item">
+                <h4 class="h4-heading--kristi-30">Thailand Rep. Office</h4>
+                <em class="contact-us-right-item-country">Nonthaburi, Thailand</em>
+                <h6 class="contact-us-right-item-name">Ms. Pornpavee Pornsekson</h6>
+                <ul class="contact-us-right-item-list">
+                  <li>– Phone: +84-899-738-412</li>
+                  <li>– Email: <a href="mailto:sales@realisticasia.com">sales@realisticasia.com</a> </li>
+                </ul>
+              </div>
+              <div class="contact-us-right-item">
+                <h4 class="h4-heading--kristi-30">Cambodia Rep. Office</h4>
+                <em class="contact-us-right-item-country">Siem Reap, Cambodia</em>
+                <h6 class="contact-us-right-item-name">Mr. Pao Dararaksmey</h6>
+                <ul class="contact-us-right-item-list">
+                  <li>– Phone: +84-899-738-412</li>
+                  <li>– Email: <a href="mailto:sales@realisticasia.com">sales@realisticasia.com</a> </li>
+                </ul>
+              </div>
+              <div class="contact-us-right-item">
+                <h4 class="h4-heading--kristi-30">Laos Rep. Office</h4>
+                <em class="contact-us-right-item-country">Luang Prabang, Lao P. D. R</em>
+                <h6 class="contact-us-right-item-name">Mr. Soulaxay Sengsavath</h6>
+                <ul class="contact-us-right-item-list">
+                  <li>– Phone: +84-899-738-412</li>
+                  <li>– Email: <a href="mailto:sales@realisticasia.com">sales@realisticasia.com</a> </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -372,7 +407,7 @@
       </div>
     </div>
   </footer>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/about-us.js"></script>
   <script src="./assets/js/base.js"></script>
 </body>
 

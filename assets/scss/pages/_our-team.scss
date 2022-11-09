@@ -1,0 +1,66 @@
+.our-team {
+  &-head {
+    background: url(../img/Hoi-An-Eco-Tours-scaled.jpg) top center / cover no-repeat;
+    padding: 14rem 0;
+
+    &-title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &-body {
+    padding: 1.6rem 0 3rem;
+
+    &-paragraph {
+      text-align: center;
+    }
+
+    &-container {
+      margin-top: 4rem;
+
+      &-item {
+        text-align: center;
+        max-width: 417px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+
+        &-img {
+          width: 100%;
+
+          object-fit: cover;
+        }
+
+        &-name {
+          font: {
+            size: 2rem;
+            family: "Playfair Display";
+            weight: 700;
+          }
+
+          margin: 3rem 0 0;
+        }
+
+        &-position {
+          font: {
+            size: 1.5rem;
+          }
+
+          margin: 8px 0;
+          color: $gray--color;
+        }
+
+        &-description {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: $gray--color;
+          margin: 0 0 3rem;
+
+        }
+      }
+    }
+  }
+}

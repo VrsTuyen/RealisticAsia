@@ -128,9 +128,6 @@ header {
           padding: 0 .6rem;
         }
 
-
-
-
         &.active {
           color: $vivid-amber--color;
         }
@@ -145,6 +142,7 @@ header {
 
           &:hover {
             color: $vivid-amber--color;
+            cursor: pointer;
 
             .header-navigation-sub {
               height: auto;
@@ -206,10 +204,11 @@ header {
 
           a {
             font: {
-              size: 1.2rem;
+              size: 1.4rem;
               family: Cabin;
             }
 
+            text-transform: capitalize;
             padding: 1rem 0 1rem 3rem;
             display: block;
           }
@@ -275,6 +274,11 @@ header {
               visibility: inherit;
               height: 35vh;
               opacity: 1;
+
+              @include responsible(tablet) {
+                height: 30vh;
+              }
+
             }
 
             i {
@@ -310,6 +314,14 @@ header {
           padding: 1.2rem;
           position: relative;
           text-transform: capitalize;
+
+          @include responsible(tablet) {
+            font-size: 2.2rem;
+          }
+
+          @include responsible(mobile) {
+            font-size: 1.5rem;
+          }
 
           &:last-child {
             border-bottom: none;

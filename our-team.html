@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/fonts/uicons-brands/css/uicons-brands.css">
   <link rel="stylesheet" href="./assets/css/grid.css">
@@ -28,7 +27,12 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <script src="https://kit.fontawesome.com/49dffc725c.js" crossorigin="anonymous"></script>
-  <title>Destinations - Realistic Asia</title>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <title>Our Team - Realistic Asia Travel</title>
 </head>
 
 <body>
@@ -86,7 +90,8 @@
                 </div>
                 <ul class="header-mobile-menu-list">
                   <li class="header-mobile-menu-item"><a href="/">home</a></li>
-                  <li class="header-mobile-menu-item"><a>about us <i class="fi fi-rr-angle-right"></i></a>
+                  <li class="header-mobile-menu-item">
+                    <a>about us <i class="fi fi-rr-angle-right"></i></a>
 
                     <ul class="header-mobile-sub-menu">
                       <li class="header-mobile-sub-menu-item"><a href="./about-us.html">about us</a></li>
@@ -118,17 +123,19 @@
                     <a class="header-navigation-link" href="/"><span class="header-navigation-span"><span>
                           Home</span></span></a>
                   </li>
-                  <li class="header-navigation-item">
-                    <a class="header-navigation-link"><span class="header-navigation-span"><span> About
-                          us</span></span></a>
+                  <li class="header-navigation-item active">
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span">
+                        <span> About us</span></span></a>
                     <ul class="header-navigation-sub">
-                      <li class="header-navigation-sub-item "><a href="./about-us.html">about us</a></li>
+                      <li class="header-navigation-sub-item"><a href="./about-us.html">about us</a></li>
                       <li class="header-navigation-sub-item"><a href="./our-team.html">our team</a></li>
                       <li class="header-navigation-sub-item"><a href="./contact-us.html">contact us</a></li>
                     </ul>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link"><span class="header-navigation-span"><span>
+                    <a class="header-navigation-link">
+                      <span class="header-navigation-span"><span>
                           Experiences</span></span></a>
                     <ul class="header-navigation-sub">
                       <li class="header-navigation-sub-item"><a href="./travel-experiences.html">Experiences</a></li>
@@ -136,16 +143,17 @@
                       <li class="header-navigation-sub-item"><a href="./travel-news.html">travel news</a></li>
                     </ul>
                   </li>
-                  <li class="header-navigation-item active">
-                    <a class="header-navigation-link" href="#"><span
+                  <li class="header-navigation-item">
+                    <a class="header-navigation-link" href="./destination.html"><span
                         class="header-navigation-span"><span>Destinations</span> </span></a>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#"><span class="header-navigation-span"><span>
-                          Responsible</span></span></a>
+                    <a class="header-navigation-link" href="./responsible-travel.html"><span
+                        class="header-navigation-span"><span>
+                          Responsible Travel</span></span></a>
                   </li>
                   <li class="header-navigation-item">
-                    <a class="header-navigation-link" href="#">
+                    <a class="header-navigation-link" href="./special-offer.html">
                       <span class="header-navigation-span"><span> Special offers</span></span></a>
                   </li>
                 </ul>
@@ -155,59 +163,36 @@
         </div>
       </div>
     </div>
+
   </header>
 
   <div class="main">
-    <div class="destination">
-      <div class="destination-head">
+    <div class="our-team">
+      <div class="our-team-head">
         <div class="grid wide">
           <div class="row">
             <div class="col l-12 m-12 s-12">
-              <h2 class="h2-playfair-display-60 ">Discover our amazing destinations for your tailor-made journey
-              </h2>
-              <p class="p-paragraph--cabin-22">Get inspired for your next holiday to Southeast Asia,<br> designed by our
-                specialists to make all your travel dreams come true.</p>
+              <h2 class="h2-playfair-display-60 our-team-head-title">our Team</h2>
             </div>
           </div>
         </div>
       </div>
-      <div class="grid wide">
-        <div class="row">
-          <div class="col l-12 m-12 s-12">
+      <div class="our-team-body">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 s-12">
+              <p class="p-paragraph--cabin our-team-body-paragraph">The Realistic Asia team is made up of talented and
+                passionate
+                people, each member
+                contributes their own travel experience, expertise in the field, and distinct insight into the
+                destination we
+                serve. We’ve been backpackers and honored guests, tourists and residents, upstarts and valued partners,
+                outsiders and insiders and we bring a special combination of personalization and hands-on experience to
+                our
+                clients that no other source can match.</p>
 
-
-
-            <div class="destination-container">
-              <div class="row">
-                <div class="col l-8  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/shutterstock_637433827.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">VietNam</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Thailand-New-Website-11-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Thailand</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Cambodia-and-Vietnam-Luxury-20-days.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Cambodia</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/Peaceful-Luang-Prabang-1.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">Laos</h3>
-                  </a>
-                </div>
-                <div class="col l-4  m-6 s-12 destination-item">
-                  <a href="#" class="destination-item-link">
-                    <img class="destination-item-img" src="./assets/img/India-destination-ok.jpg" alt="">
-                    <h3 class="h3-heading-img--playfair-display">India</h3>
-                  </a>
+              <div class="our-team-body-container">
+                <div class="row">
                 </div>
               </div>
             </div>
@@ -372,7 +357,7 @@
       </div>
     </div>
   </footer>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/our-team.js"></script>
   <script src="./assets/js/base.js"></script>
 </body>
 

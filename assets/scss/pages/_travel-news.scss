@@ -1,0 +1,21 @@
+.travel-news {
+  margin-top: $header-primary--height ;
+
+
+  &-body {
+    .blog-news-content-item {
+      &-img {
+        height: 318px;
+
+        img {
+          height: 100%;
+        }
+
+        @include responsible(tablet) {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}

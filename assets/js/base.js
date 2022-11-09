@@ -1,8 +1,22 @@
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
 const path = window.location.pathname;
 const page = path.split("/").pop();
 
+
 const headerMobile = $('.header-mobile-menu-icon')
+
+
+function setFavicon(favImg) {
+  const head = document.querySelector('head')
+  let setFavicon = document.createElement('link');
+  setFavicon.setAttribute('rel', 'shortcut icon');
+  setFavicon.setAttribute('href', favImg);
+  head.appendChild(setFavicon);
+}
+
+setFavicon('https://realisticasia.com/wp-content/uploads/2018/02/cropped-Icon-Logo-Realistic-Asia-Yellow-32x32.png');
 
 // when scroll
 document.addEventListener('scroll', () => scroll())
@@ -28,7 +42,10 @@ function scroll() {
   }
   else if (window.scrollY == 0) {
     if (page === '' || page === 'index.html') {
-      headerContact.style.transform = 'translateY(0)'
+      headerContact.style.cssText = `transform: translateY(0);
+        z-index: 1;
+      position: relative;
+      `
       headerNavigation.style.cssText = `
           position: fixed;
           color: #fff;
