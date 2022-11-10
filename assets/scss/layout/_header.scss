@@ -276,7 +276,7 @@ header {
               opacity: 1;
 
               @include responsible(tablet) {
-                height: 30vh;
+                height: 40vh;
               }
 
             }
@@ -316,7 +316,7 @@ header {
           text-transform: capitalize;
 
           @include responsible(tablet) {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
           }
 
           @include responsible(mobile) {

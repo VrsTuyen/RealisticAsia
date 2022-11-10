@@ -1,0 +1,77 @@
+.responsible-travel {
+  &-title {
+    // margin-top: $header-primary--height;
+    background: url('https://realisticasia.com/wp-content/uploads/2021/12/shutterstock_242141845-scaled-e1638870348304.jpg') top center / cover no-repeat;
+    padding: 10rem 0;
+
+    .h2-playfair-display-45 {
+      color: $white--color;
+    }
+  }
+
+  &-body {
+    &-head {
+      .p-paragraph--cabin {
+        font-size: 1.6rem;
+        color: $gray--color;
+        text-align: center;
+      }
+
+      margin-bottom: 6rem;
+    }
+
+    .layout-full {
+      .content {
+        .center-content {
+          padding: 5rem 16px;
+
+          .h2-heading--kristi-60 {
+            margin-bottom: 0;
+          }
+
+          .p-paragraph--cabin {
+            font-size: 1.6rem;
+            color: $gray--color;
+
+          }
+        }
+      }
+    }
+
+    &-card {
+      .card {
+        border-radius: 8px;
+        height: 300px;
+        margin: 6rem 0;
+
+        &-front {
+          border-radius: 8px;
+
+          &-title {
+            font: {
+              size: 4.2rem;
+              family: Kristi;
+              weight: 400;
+            }
+          }
+        }
+
+        &-back {
+          border-radius: 8px;
+          justify-content: center;
+
+          .h2-playfair-display-45 {
+            margin: 0;
+          }
+
+          .p-paragraph--cabin {
+            color: $gray--color;
+            font-size: 16px;
+            margin: 10px 0 0 0;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

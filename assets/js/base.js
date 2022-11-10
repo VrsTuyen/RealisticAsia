@@ -41,7 +41,7 @@ function scroll() {
         `
   }
   else if (window.scrollY == 0) {
-    if (page === '' || page === 'index.html') {
+    if (page === '' || page === 'index.html' || page === 'special-offer.html' || page === 'responsible-travel.html' || page === 'destination.html' || page === 'our-team.html') {
       headerContact.style.cssText = `transform: translateY(0);
         z-index: 1;
       position: relative;
@@ -75,4 +75,13 @@ $$('.header-mobile-menu-item').forEach((element) => {
     }
     element.classList.toggle('active')
   }
+})
+
+
+$('.fixed-language-title').addEventListener('click', (e) => {
+  $('.fixed-language').classList.toggle("active")
+})
+
+$('.fixed-contact-wrap').addEventListener('click', (e) => {
+  $('.fixed-contact-wrap').classList.toggle("active")
 })

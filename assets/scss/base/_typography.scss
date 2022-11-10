@@ -22,7 +22,7 @@
 .p-paragraph--cabin {
   margin: 2.5rem 0 0 0;
   color: $light-green-cyan--color;
-  line-height: 3rem;
+  line-height: 2.6rem;
 
   font: {
     size: 1.9rem;
@@ -47,6 +47,7 @@
     family: "Playfair Display";
   }
 
+  text-transform: capitalize;
   text-align: center;
   color: $black--color;
 

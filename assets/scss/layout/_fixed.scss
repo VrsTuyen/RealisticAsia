@@ -1,0 +1,119 @@
+.fixed {
+
+  &-language {
+    background-color: $vivid-amber--color;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0 0 2px 2px;
+    color: $white--color;
+    font-size: 1.4rem;
+    overflow: hidden;
+    transition: all .3s;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(0);
+
+    &.active {
+      transform: translateX(0);
+
+      .fixed-language-list {
+        transform: translateX(0);
+        display: block;
+
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      margin-right: 1rem;
+      transform: translateX(calc(-100% - 2rem));
+      transition: all .3s;
+      padding-left: 0;
+      margin: 0 16px 0 0;
+      display: none;
+      transition: transform .3s;
+    }
+
+    &-item {
+      display: inline;
+
+      img {
+        width: 32px;
+      }
+    }
+
+    &-title {
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-contact {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 3rem 3rem 0;
+
+    &-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: radial-gradient($vivid-cyan-blue--color 70%, $vivid-green-cyan--color 30%);
+      border-radius: 50%;
+
+      width: 64px;
+      height: 64px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &-close {
+        transform: rotate(360deg) translateY(10%);
+        opacity: 0;
+      }
+
+      &-chat {
+        transform: rotate(360deg);
+      }
+
+      i {
+
+        font-size: 3.6rem;
+        color: $white--color;
+        transition: all .2s;
+        position: absolute;
+
+      }
+
+      &.active {
+        .fixed-contact-wrap {
+          &-chat {
+            opacity: 0;
+            transform: rotate(0);
+          }
+
+          &-close {
+            opacity: 1;
+            transform: rotate(0) translateY(10%);
+          }
+        }
+      }
+    }
+
+
+
+
+  }
+}

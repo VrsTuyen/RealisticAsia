@@ -1,6 +1,6 @@
 const blogs = [
   {
-    path: `https://cungphuot.info/wp-content/uploads/2019/09/doi-che-long-coc.jpg`,
+    path: `https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg`,
     title: `Realistic Asia’s Amazing Travel Deals With 2023 Departures`,
     description: `Realistic Asia’s Amazing Travel Deals With 2023 Departures
     We are proud to have partnered with Travel Stride for already 4 years and deliver amazing deals across the globe. And we would like to present the new collection of our amazing Indochina deals with 2023 departures. This site is the `,

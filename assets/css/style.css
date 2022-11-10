@@ -225,6 +225,10 @@ html {
   }
 }
 
+.card-layout-full {
+  width: 100%;
+}
+
 .card {
   position: relative;
   perspective: 300rem;
@@ -271,6 +275,19 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.card-front-button {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  background: #e5e5e5;
+  padding: 1rem 5rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  transition: all 0.3s;
+}
+.card-front-button:hover {
+  background: #ccc;
 }
 .card-back {
   transform: rotateY(-180deg);
@@ -385,6 +402,17 @@ html {
 .layout-full .content .center-content p {
   text-align: justify;
 }
+.layout-full .content .center-content-list {
+  padding-left: 0;
+  text-align: left;
+  width: 95%;
+}
+.layout-full .content .center-content-item {
+  font-size: 1.7rem;
+  padding-left: 4px;
+  line-height: 2.4rem;
+  color: #808285;
+}
 
 .blog-news-content-item {
   width: 100%;
@@ -478,7 +506,7 @@ html {
 .p-paragraph--cabin {
   margin: 2.5rem 0 0 0;
   color: #7bdcb5;
-  line-height: 3rem;
+  line-height: 2.6rem;
   font-size: 1.9rem;
 }
 
@@ -492,6 +520,7 @@ html {
 .h2-playfair-display-45 {
   font-size: 4.5rem;
   font-family: "Playfair Display";
+  text-transform: capitalize;
   text-align: center;
   color: #000;
 }
@@ -797,7 +826,7 @@ header .header-mobile-menu-icon.active ~ .header-mobile-menu-list {
 }
 @media (max-width: 979px) {
   header .header-mobile-menu-icon.active ~ .header-mobile-menu-list {
-    height: 30vh;
+    height: 40vh;
   }
 }
 header .header-mobile-menu-icon.active i {
@@ -830,7 +859,7 @@ header .header-mobile-menu-item {
 }
 @media (max-width: 979px) {
   header .header-mobile-menu-item {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -1171,7 +1200,7 @@ footer .footer-text {
 }
 .main .home-media {
   background: url("../img/h1-background-3.png") top/cover no-repeat;
-  padding: 10rem 0 10rem;
+  padding: 5rem 0 10rem;
 }
 @media (max-width: 979px) {
   .main .home-media {
@@ -1444,7 +1473,12 @@ footer .footer-text {
   flex: 1;
   display: flex;
   align-items: center;
-  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .main .home-join-newsletter-mail-content {
+    flex-direction: column;
+    padding: 0 16px;
+  }
 }
 .main .home-join-newsletter-mail-content-input {
   margin-left: 6rem;
@@ -1454,6 +1488,7 @@ footer .footer-text {
   outline: none;
   border: none;
   font-size: 1.6rem;
+  border-radius: 2px;
 }
 @media (max-width: 768px) {
   .main .home-join-newsletter-mail-content-input {
@@ -1475,7 +1510,7 @@ footer .footer-text {
 }
 @media (max-width: 768px) {
   .main .home-join-newsletter-button-content {
-    margin-top: 16px;
+    margin: 16px 0 0 0;
   }
 }
 .main .home-join-newsletter-button-content:hover {
@@ -1904,7 +1939,6 @@ footer .footer-text {
 }
 
 .destination-head {
-  margin-top: 8rem;
   background: url(../img/Vietnam-Luxury-Cultural-Exploration-In-10-Days.jpg) top center/cover no-repeat;
   padding: 8rem 18rem;
 }
@@ -2136,6 +2170,247 @@ footer .footer-text {
   .travel-news-body .blog-news-content-item-img {
     height: 100%;
   }
+}
+
+.responsible-travel-title {
+  background: url("https://realisticasia.com/wp-content/uploads/2021/12/shutterstock_242141845-scaled-e1638870348304.jpg") top center/cover no-repeat;
+  padding: 10rem 0;
+}
+.responsible-travel-title .h2-playfair-display-45 {
+  color: #fff;
+}
+.responsible-travel-body-head {
+  margin-bottom: 6rem;
+}
+.responsible-travel-body-head .p-paragraph--cabin {
+  font-size: 1.6rem;
+  color: #808285;
+  text-align: center;
+}
+.responsible-travel-body .layout-full .content .center-content {
+  padding: 5rem 16px;
+}
+.responsible-travel-body .layout-full .content .center-content .h2-heading--kristi-60 {
+  margin-bottom: 0;
+}
+.responsible-travel-body .layout-full .content .center-content .p-paragraph--cabin {
+  font-size: 1.6rem;
+  color: #808285;
+}
+.responsible-travel-body-card .card {
+  border-radius: 8px;
+  height: 300px;
+  margin: 6rem 0;
+}
+.responsible-travel-body-card .card-front {
+  border-radius: 8px;
+}
+.responsible-travel-body-card .card-front-title {
+  font-size: 4.2rem;
+  font-family: Kristi;
+  font-weight: 400;
+}
+.responsible-travel-body-card .card-back {
+  border-radius: 8px;
+  justify-content: center;
+}
+.responsible-travel-body-card .card-back .h2-playfair-display-45 {
+  margin: 0;
+}
+.responsible-travel-body-card .card-back .p-paragraph--cabin {
+  color: #808285;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  text-align: justify;
+}
+
+.special-head {
+  padding: 200px 0;
+  background: url(https://realisticasia.com/wp-content/uploads/2022/09/Thailand-Features2.jpg) top center/cover no-repeat;
+}
+.special-body-tour {
+  margin-top: 3rem;
+}
+.special-body-tour-item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+}
+.special-body-tour-item:hover .special-body-tour-item-img img {
+  filter: brightness(0.6);
+}
+.special-body-tour-item:hover .special-body-tour-item-content-title {
+  margin: 0;
+}
+.special-body-tour-item:hover .special-body-tour-item-content-description {
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 0;
+}
+.special-body-tour-item-img {
+  width: 100%;
+  user-select: none;
+}
+.special-body-tour-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+  user-select: none;
+}
+@media (max-width: 979px) {
+  .special-body-tour-item-img img {
+    filter: brightness(0.6);
+  }
+}
+.special-body-tour-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+.special-body-tour-item-content-title {
+  font-size: 2rem;
+  margin-bottom: -2.8rem;
+  transition: all 0.3s;
+}
+@media (max-width: 979px) {
+  .special-body-tour-item-content-title {
+    margin-bottom: 0;
+  }
+}
+.special-body-tour-item-content-description {
+  font-size: 1.6rem;
+  margin-bottom: -3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 979px) {
+  .special-body-tour-item-content-description {
+    margin-bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.special-body-tour-item-content-price {
+  display: block;
+  font-size: 1.8rem;
+  padding: 8px 0;
+  text-shadow: 0 0 1px #000;
+}
+.special-body-tour-item-content-price-discount {
+  display: inline-block;
+  text-decoration: line-through;
+}
+.special-body-tour-item-content-price-current {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.special-body-tour-btn {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.special-body-tour-btn a {
+  padding: 14px 4rem;
+}
+
+.fixed-language {
+  background-color: #fcb900;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 0 2px 2px;
+  color: #fff;
+  font-size: 1.4rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(0);
+}
+.fixed-language.active {
+  transform: translateX(0);
+}
+.fixed-language.active .fixed-language-list {
+  transform: translateX(0);
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.fixed-language-list {
+  list-style: none;
+  margin-right: 1rem;
+  transform: translateX(calc(-100% - 2rem));
+  transition: all 0.3s;
+  padding-left: 0;
+  margin: 0 16px 0 0;
+  display: none;
+  transition: transform 0.3s;
+}
+.fixed-language-item {
+  display: inline;
+}
+.fixed-language-item img {
+  width: 32px;
+}
+.fixed-language-title {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+.fixed-language-title:hover {
+  cursor: pointer;
+}
+.fixed-contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 3rem 3rem 0;
+}
+.fixed-contact-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#0693e3 70%, #00d084 30%);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.fixed-contact-wrap:hover {
+  cursor: pointer;
+}
+.fixed-contact-wrap-close {
+  transform: rotate(360deg) translateY(10%);
+  opacity: 0;
+}
+.fixed-contact-wrap-chat {
+  transform: rotate(360deg);
+}
+.fixed-contact-wrap i {
+  font-size: 3.6rem;
+  color: #fff;
+  transition: all 0.2s;
+  position: absolute;
+}
+.fixed-contact-wrap.active .fixed-contact-wrap-chat {
+  opacity: 0;
+  transform: rotate(0);
+}
+.fixed-contact-wrap.active .fixed-contact-wrap-close {
+  opacity: 1;
+  transform: rotate(0) translateY(10%);
 }
 
 /*# sourceMappingURL=style.css.map */
