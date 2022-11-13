@@ -68,13 +68,10 @@
         &-content {
           user-select: none;
           text-align: center;
-          transform: translateY(-50%);
+          margin-bottom: 6rem;
           position: relative;
 
-          @include responsible(tablet) {
-            transform: translateY(-15%);
-
-          }
+          @include responsible(tablet) {}
 
 
           &__p {
@@ -476,6 +473,7 @@
           flex: 0 0 50%;
           max-width: 50%;
           z-index: 0;
+          object-fit: cover;
 
           @include responsible(tablet) {
             flex: 0 0 100%;
@@ -668,6 +666,7 @@
 
           .comment {
             &-slide {
+
               &-item {
                 margin-top: 2rem;
                 transition: transform .3s, animation 1s;
@@ -947,6 +946,16 @@
     transition: all .5s;
     opacity: 0;
 
+    &.active {
+      visibility: visible;
+      opacity: 1;
+
+      .home-video-overlay-body {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
     &-body {
       display: flex;
       justify-content: center;
@@ -964,12 +973,4 @@
   }
 }
 
-#home-video-overlay:target {
-  visibility: visible;
-  opacity: 1;
-
-  .home-video-overlay-body {
-    opacity: 1;
-    visibility: visible;
-  }
-}
+#home-video-overlay:target {}

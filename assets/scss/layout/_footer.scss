@@ -68,9 +68,13 @@ footer {
       max-width: 60%;
       margin: 1.2rem 0;
 
-      @include responsible(mobile) {
-        max-width: 100%;
-      }
+      // @include responsible('pc low') {
+      //   max-width: 60%;
+      // }
+
+      // @include responsible(tablet) {
+      //   max-width: 60%;
+      // }
 
       &-heading {
         text-transform: uppercase;

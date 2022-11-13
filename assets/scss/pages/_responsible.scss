@@ -15,6 +15,12 @@
         font-size: 1.6rem;
         color: $gray--color;
         text-align: center;
+
+        @include responsible(mobile) {
+          padding: 0 16px;
+          text-align: justify;
+        }
+
       }
 
       margin-bottom: 6rem;
@@ -33,6 +39,20 @@
             font-size: 1.6rem;
             color: $gray--color;
 
+            @include responsible(mobile) {
+              color: $white--color;
+            }
+          }
+
+          &-list {
+            @include responsible(mobile) {
+              color: $white--color;
+            }
+
+          }
+
+          &-item {
+            color: inherit;
           }
         }
       }
@@ -69,6 +89,16 @@
             font-size: 16px;
             margin: 10px 0 0 0;
             text-align: justify;
+            display: -webkit-box;
+            line-clamp: 5;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+          }
+
+          .card-front-button {
+            margin-top: 1.6rem;
           }
         }
       }

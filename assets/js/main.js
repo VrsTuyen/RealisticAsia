@@ -308,9 +308,26 @@ function slideImg(index) {
 
 setInterval(() => slideImg(1), 10000)
 
-
-
-
 function returnFalse() {
   return false
+}
+
+const iframe = $('iframe')
+const win = iframe.contentWindow
+
+$('.home-video-overlay-body').onclick = function () {
+  toggleVideoOverlay()
+}
+
+
+
+function toggleVideoOverlay() {
+  $('.home-video-overlay').classList.toggle('active')
+  if (!$('.home-video-overlay.active')) {
+    win.postMessage("pauseVideo", 'https://youtu.be/vD1PKG98SiU')
+  }
+}
+
+$('#video').onclick = function () {
+  toggleVideoOverlay()
 }

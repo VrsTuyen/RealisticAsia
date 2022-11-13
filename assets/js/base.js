@@ -85,3 +85,43 @@ $('.fixed-language-title').addEventListener('click', (e) => {
 $('.fixed-contact-wrap').addEventListener('click', (e) => {
   $('.fixed-contact-wrap').classList.toggle("active")
 })
+
+$('.fixed-chat-label').addEventListener('click', () => {
+  $('.fixed-chat').classList.add('active')
+})
+
+$('.fixed-chat-content-head-close').addEventListener('click', () => {
+  $('.fixed-chat.active').classList.remove('active')
+})
+
+$$('.author-body-panel-item').forEach((panel, index) => {
+  panel.onclick = () => {
+    $('.author-body-panel-item.active').classList.remove('active')
+    panel.classList.add('active')
+
+    if (index === 0) {
+      $('.author-body-login').style.display = 'block'
+      $('.author-body-register').style.display = 'none'
+    } else {
+      $('.author-body-login').style.display = 'none'
+      $('.author-body-register').style.display = 'block'
+    }
+  }
+})
+
+function login() {
+  $('.author').addEventListener('click', () => {
+    openRegister()
+  })
+  $('.author-body').addEventListener('click', (e) => {
+    e.stopPropagation()
+  })
+
+  $('.register-btn').addEventListener('click', () => {
+    openRegister()
+  })
+
+  function openRegister() {
+    $('.author').classList.toggle('active')
+  }
+}

@@ -10,7 +10,7 @@ $layouts: 330, 337, 357, 411;
       width: 100%;
     }
 
-    @include responsible('mobile') {
+    @include responsible('tablet') {
       width: 100%;
     }
   }
