@@ -22,6 +22,8 @@ setFavicon('https://realisticasia.com/wp-content/uploads/2018/02/cropped-Icon-Lo
 document.addEventListener('scroll', () => scroll())
 
 scroll()
+login()
+
 
 function scroll() {
   const headerContact = $('.header-contact')
