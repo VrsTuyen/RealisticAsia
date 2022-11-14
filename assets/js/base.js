@@ -24,7 +24,7 @@ document.addEventListener('scroll', () => scroll())
 scroll()
 login()
 fixed()
-headerMobile()
+headerNavMobile()
 
 function scroll() {
   const headerContact = $('.header-contact')
@@ -63,7 +63,7 @@ function scroll() {
     }
   }
 }
-function headerMobile() {
+function headerNavMobile() {
 
   headerMobile.onclick = (e) => {
     e.preventDefault()
