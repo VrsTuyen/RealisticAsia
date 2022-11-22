@@ -2,7 +2,7 @@ const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
 const path = window.location.pathname;
-const page = path.split("/").pop();
+const page = path.split("./").pop();
 
 
 const headerMobile = $('.header-mobile-menu-icon')

@@ -484,6 +484,11 @@ html {
 .blog-news-content-item-author-name-info a {
   margin: 0 2px !important;
 }
+.blog-news-content-button {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
 
 .h2-heading {
   font-size: 6rem;
@@ -2290,6 +2295,11 @@ footer .footer-text {
 }
 .travel-news-body .blog-news-content-item-author-tag {
   margin: 0 2rem;
+}
+.travel-news-button {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .responsible-travel-title {
